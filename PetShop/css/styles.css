@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Header */
+header{
+    background-color: #F0A83E;
+}
+
+.div-1-header{
+    background-color: #222222;
+    color: #F3F3F3;
+    font-size: 10px;
+    display: block;
+}
+.div-1-header p{
+    display: inline-block;
+}
+
+h1{
+    color:#FFFFFF;
+    font-size: 20px;
+}
+h1 span{
+    color: #3C2313;
+}
+
+/* --------NAV----------- */
+ul {
+    list-style-type: none;
+    color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+    
+/* Main */
+
+main{
+    background-color: E5E5E5;
+}
+
+.banner{
+    background-image: url(../img/foto.png);
+    width:100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+}
+.banner1{
+    width: 40%;
+    margin-left: 60%;
+    padding-top: 15%;
+    text-align: center;
+    
+}
+
+.section-2{
+    text-align: center;
+}
+.section-2 .icono{
+    font-size: 50px;
+}
+.section-2 h2{
+    text-align: center;
+    color: #3C2313;
+    font-size: 40px;
+}
+
+.section-2 ul li{
+    font-size: 15px;
+    color:#666666;
+}
+
+.section-3{
+    color: #3C2313;
+    font-size: 15px;
+    
+}
+
+.section-3 p{
+    color:#F0A83E;
+}
+
+
+
+/* -----------------Footer------------------*/
+footer{
+    background-color: #3C2313;
+    color: #ffffff;
+}
+
+.fa-map-marker-alt,.fa-phone-square-alt,.fa-envelope{
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+
+.div-1-footer{
+    background-color: #F0A83E;
+}
+
+.div-1-footer p{    
+    display: inline-block;
+}
+
+footer span{
+    color: #F0A83E;
+}
+
+
+.div-fin-footer{
+    background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 10px;
+}
