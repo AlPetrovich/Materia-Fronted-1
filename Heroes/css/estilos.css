@@ -38,7 +38,7 @@ header h1{
 
 main{
     margin-top: 100px;
-    display: block;
+    
 }
 
 .container{
@@ -61,6 +61,14 @@ section{
     background-repeat: no-repeat;
     height: 193px;
     width: 100%;
+}
+input[type=submit] {
+    background-color: #00669F;
+    color: white;
+    width: 40%;
+    height: 48px;
+    margin-top: 25px;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 64%);
 }
 
 .card-harley{
@@ -95,19 +103,7 @@ p{
     line-height: 23px;
 }
 
-.card-button{
-    background-color: #00669F;
-    width: 40%;
-    height: 35px;
-    margin: 0 auto;
-}
-.card-button a{
-    display: block;
-    color: #F3F3F3;
-    text-decoration: none;
-    margin-top: 50%;
-    padding-top: 8px;
-}
+
 
 /* ---------footer------------------- */
 
@@ -117,4 +113,8 @@ footer{
     padding: 25px 0px;
     margin-top: 100px;
     font-size: 16px;
+}
+
+footer p{
+    text-align: center;
 }

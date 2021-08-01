@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.info {
+  background-color: #1cd1b0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+header {
+  background-color: #00669f;
+  height: 100px;
+}
+header h1 {
+  padding-top: 25px;
+  margin-left: 25px;
+  font-size: 40px;
+}
+
+/******Aqui comienza el MAIN ******/
+
+main {
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+}
+
+.contenedor-hijo {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.cards {
+  width: 40%;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding-bottom: 20px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+section {
+  width: 40%;
+  text-align: center;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+/* Estos son los fondos */
+
+.fon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 193px;
+  width: 100%;
+}
+.fon-bat {
+  background-image: url(../img/fondoBatman.png);
+}
+
+.fon-mujer-maravilla {
+  background-image: url(../img/fondoMujerMaravilla.png);
+}
+.fon-Superman {
+  background-image: url(../img/fondoSuperman.png);
+}
+.fon-Harley {
+  background-image: url(../img/fondoVillana.png);
+}
+
+.img-maravilla,
+.img-harley,
+.img-superman,
+.img-batman {
+  width: 38%;
+}
+
+img {
+  position: relative;
+  border-radius: 50%;
+  z-index: 50;
+  bottom: 60px;
+}
+
+/* ---Este es el boton--- */
+
+.boton-azul {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #00669f;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 95%;
+  z-index: 100;
+}
+.boton-azul > h2 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.cards {
+  text-align: center;
+}
+
+.cards > h2 {
+  padding-bottom: 20px;
+}
+.cards > p {
+  text-align: justify;
+  padding: 0 15px;
+  line-height: 23px;
+}
+
+input[type="submit"] {
+  background-color: #00669f;
+  color: white;
+  width: 40%;
+  height: 48px;
+  margin-top: 25px;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 64%);
+}
+
+.vector {
+  background-image: url(../img/Vector.png);
+  width: 30px;
+  height: 26px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+/* ---------footer------------------- */
+
+footer {
+  background-color: #00669f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > p {
+  padding-top: 25px;
+}
+
+.github {
+  padding-right: 40px;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cards {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:460px) {
+    .contenedor-hijo {
+      flex-direction:column;
+      }
+  .boton-azul {
+    width: 3.2rem;
+    height: 3.7rem;
+    left: 82%;
+  }
+  .cards {
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .github{
+      margin-top: 18px;
+  }
+  p {
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+  }
+}
