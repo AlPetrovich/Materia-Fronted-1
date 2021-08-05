@@ -188,8 +188,89 @@ a:hover{
     color: var(--segundo-color);
 }
 
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 10px;
+}
+main form h2{
+    color: var(--tercer-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main form>input{
+    background-color: var(--tercer-color);
+    width: 340px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+
+}
+input[type="text" i] {
+    padding: 1px 10px;
+}
+
+.btns input{
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    color: var(--cuarto-color);
+}
+
+.btn1{
+    background-color: #8a8787;
+}
+
+.btn2{
+    background-color: var(--segundo-color);
+}
+
+.footer-email{
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 270px;
+    padding-left: 10px;
+}
+
+.footer-btn{
+    width: 80px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background: rgba(60, 35, 19, 1);
+    color: var(--cuarto-color);
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+
+/* Aqui comienza el FOOTER */
+
 footer{
     margin-top: 100px;
+}
+
+.suscripcion-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--segundo-color);
+    align-items: center;
+}
+.suscripcion-footer h3{
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+}
+.fa-envelope-open{
+    font-size: 30px;
+    color: var(--cuarto-color);
 }
 
 
@@ -245,7 +326,7 @@ footer{
     color: var(--cuarto-color);
     background-color: var(--primer-color);
     text-align: center;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 
