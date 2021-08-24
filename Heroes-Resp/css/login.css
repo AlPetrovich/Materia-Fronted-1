@@ -4,7 +4,11 @@
     padding: 0px;
     margin: 0px;
 }
-
+@keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+}
 
 :root{
     --primer-color:#1cd1b0; 
@@ -25,6 +29,14 @@ header{
     padding-left: 10px;
 }
 
+
+
+.wiggle a:hover{ 
+    animation: wiggle 75ms infinite;
+    animation-timing-function: linear;   
+  }
+
+  
 header>div{
     margin-top: 25px;
     color: var(--tercer-color);
@@ -47,6 +59,19 @@ h2{
     font-size: 40px;
     margin-bottom: 35px;
 }
+h2::after{
+    content: "\f2f6";
+    font-family: "Font Awesome 5 Free"; 
+    margin-left: 10px;
+    font-weight: bold;
+    color: #00669f;
+}
+
+
+h2:hover{
+    background-color: yellow;
+    color: green;
+}
 
 form input{
     height: 35px;
@@ -58,8 +83,17 @@ div>input{
     border: none;
     border-radius: 15px;
     background-color: var(--primer-color);
-    font-weight: bold;
     margin-top: 30px;
+}
+div>input:hover{
+    background-color: #155045;
+    box-shadow: 2px 3px 10px black;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    width: 365px;
+    height: 40px;
 }
 
 div>a{

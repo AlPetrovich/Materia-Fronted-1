@@ -21,6 +21,9 @@
     align-items: center;
     color: var(--cuarto-color)
 }
+.ofertas p{
+    margin-left: 10px;
+}
 
 .ofertas>div>ul{
     display: flex;
@@ -44,6 +47,7 @@ header{
 
 header>h1{
     color: var(--primer-color);
+    margin-left: 20px;
 }
 header>h1 span{
     color: var(--cuarto-color);
@@ -57,6 +61,7 @@ img{
 ul{
     list-style: none;
 }
+
 
 ul li{
     display: inline-block;
@@ -161,6 +166,7 @@ a:hover{
     background-position: center;
     
 }
+
 .comedero{
     background-image: url(../img/comedero.png);
     width: 25%;
@@ -209,8 +215,12 @@ main form>input{
     border-radius: 15px;
 
 }
-input[type="text" i] {
+input[type="text" ] {
     padding: 1px 10px;
+}
+
+input::placeholder{
+    color: var(--cuarto-color);
 }
 
 .btns input{

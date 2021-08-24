@@ -1,0 +1,39 @@
+$bg-primary:#03faee;
+$bg-secondary:#f8f8f8;
+$color-primary:#8b8b8b;
+$shadow:#92f7f2;
+
+@mixin padding($paddingLeft, $paddingTop, $paddingRigth) {
+    padding-left: $paddingLeft;
+    padding-top: $paddingTop;
+    padding-right: $paddingRigth;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h1{
+        @include padding(0rem,1rem,0rem );
+    }
+    nav{
+        @include padding(0rem, 1rem,3rem );
+        
+        ul{
+            display: flex;
+            gap: 13px;
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    padding: 0.7rem;
+                    &:hover{
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }   
+    }
+}

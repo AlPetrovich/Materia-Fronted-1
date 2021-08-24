@@ -1,0 +1,99 @@
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$shadow: #92f7f2;
+
+@mixin flex($display, $content, $aling, $gap) {
+  display: $display;
+  justify-content: $content;
+  align-items: $aling;
+  gap: $gap;
+}
+
+main {
+  margin-top: 3rem;
+  .contenedor-principal {
+    @include flex(flex, center, center, 1rem);
+    .texto-botones {
+      width: 30%;
+      h2 {
+        font-family: Impact, "Arial Narrow Bold", sans-serif;
+        font-size: 55px;
+        line-height: 70px;
+        letter-spacing: 10px;
+        padding-bottom: 2rem;
+        span {
+          background: linear-gradient(
+            to top,
+            white 0%,
+            white 50%,
+            $shadow 50%,
+            $shadow 100%
+          );
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 35pxpx;
+      }
+      form {
+        display: flex;
+        gap: 20px;
+        input {
+          width: 30%;
+          background-color: $bg-primary;
+          border: none;
+          height: 60px;
+          border-radius: 8px;
+          margin-top: 2rem;
+          &:hover {
+            background-color: #376e6c;
+            color: white;
+            font-weight: bold;
+            box-shadow: 2px 3px 8px black;
+          }
+        }
+      }
+    }
+    .imagen {
+      width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .contenedor-tarjetas {
+    @include flex(flex, center, center, 20px);
+    margin-top: 30px;
+    div {
+      width: 25%;
+      background-color: $bg-secondary;
+      padding: 20px;
+      transition: 300ms;
+      &:hover {
+        transform: scale(1.05);
+      }
+      h2 {
+        width: 40px;
+        height: 40px;
+        font-weight: 100;
+        @include flex(flex, center, center, 0rem);
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+      h3 {
+        padding-top: 10px;
+        span {
+          background: linear-gradient(
+            to top,
+            white 0%,
+            white 50%,
+            $shadow 50%,
+            $shadow 100%
+          );
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 30px 0px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  p {
+    color: black;
+  }
+  div {
+    .fab {
+      padding: 10px;
+      color: rgb(0, 0, 0);
+      font-size: 1.5rem;
+      border-radius: 50%;
+      &:hover{
+        box-shadow: 3px 3px 5px black;
+      }
+    }
+  }
+}

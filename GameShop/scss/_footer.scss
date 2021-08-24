@@ -1,0 +1,59 @@
+$color-primario:#222222;
+$color-secundario:#D01418;
+$color-terciaro:#ecebeb;
+footer{
+    padding-top: 90px;
+    .logo-redes{
+        background-color:$color-primario;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0px;
+        .gameShop{
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            h3{
+                color: $color-terciaro;
+                font-size: 25px;
+                margin-left: 10px;
+                span{
+                    color: $color-secundario;
+                }
+            }
+        }
+        .redes{
+            margin-right: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                color: white;
+                font-weight: 100;
+                font-size: 20px;
+            }
+            .iconos{
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+                .fa-twitter{
+                    color: #14AED0;
+                    font-size: 24px;
+                }
+                .fa-facebook-f{
+                    color:#1476D0 ;
+                    font-size: 24px;
+                }
+                .fa-instagram{
+                    color:#CE0CFF;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    p{
+        background-color: #C4C4C4;
+        text-align: center;
+        padding: 10px 0px;
+    }
+}

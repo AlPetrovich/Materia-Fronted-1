@@ -1,0 +1,112 @@
+$color-primario:#222222;
+$color-secundario:#D01418;
+$color-terciaro:#ecebeb;
+
+main{
+    .comprar{
+        background-image: url(../img/imgfondo.png);
+        height: 512px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        h1{
+            text-align: center;
+            color: $color-terciaro;
+            span{
+                color:$color-secundario;
+            }
+        }
+        a{
+
+           input{
+               background-color:$color-secundario;
+               width: 200px;
+               height: 60px;
+               border-color: transparent;
+               color: $color-terciaro;
+               font-size: 25px;
+               margin-top: 40px;
+               box-shadow: 1px 1px 10px 5px black;
+               &:hover{
+                   background-color: $color-terciaro;
+                   color:$color-secundario;
+                   transition: 500ms;
+               }
+           }
+        }
+    }
+    h2{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .productosDestacados{
+        display: flex;
+        justify-content:center;
+        gap: 25px;
+        margin-top: 40px;
+        .cards{
+            background-color: white;
+            height: 400px;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 50px;
+            img{
+                width: 45%;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .descripcion{
+                margin-right: 40px;
+                margin-left: 40px;
+                margin-top: 25px;
+                h4{
+                    font-size: 20px;
+                    line-height: 34px;
+                }
+                .envio{
+                    color:#619D00;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .productosEstrella{
+        display: flex;
+        justify-content: center;
+        gap: 140px;
+        margin-top: 50px;
+        .sillas-gamer{
+            background-image: url(../img/chicoypc.png);
+            width: 35%;
+            height: 155px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+        .computadoras{
+            background-image: url(../img/computadoras.png);
+            width: 35%;
+            height: 155px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        h4{
+            color: $color-terciaro;
+            margin-right: 50px;
+            font-size: 25px;
+        }
+    }
+}

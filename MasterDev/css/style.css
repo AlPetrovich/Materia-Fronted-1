@@ -1,0 +1,173 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  padding-left: 0rem;
+  padding-top: 1rem;
+  padding-right: 0rem;
+}
+
+header nav {
+  padding-left: 0rem;
+  padding-top: 1rem;
+  padding-right: 3rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 13px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.7rem;
+}
+
+header nav ul li a:hover {
+  background-color: #8b8b8b;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+main .contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .contenedor-principal .texto-botones {
+  width: 30%;
+}
+
+main .contenedor-principal .texto-botones h2 {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  padding-bottom: 2rem;
+}
+
+main .contenedor-principal .texto-botones h2 span {
+  background: linear-gradient(to top, white 0%, white 50%, #92f7f2 50%, #92f7f2 100%);
+}
+
+main .contenedor-principal .texto-botones p {
+  font-size: 1.2rem;
+  line-height: 35pxpx;
+}
+
+main .contenedor-principal .texto-botones form {
+  display: flex;
+  gap: 20px;
+}
+
+main .contenedor-principal .texto-botones form input {
+  width: 30%;
+  background-color: #03faee;
+  border: none;
+  height: 60px;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+main .contenedor-principal .texto-botones form input:hover {
+  background-color: #376e6c;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 3px 8px black;
+}
+
+main .contenedor-principal .imagen {
+  width: 40%;
+}
+
+main .contenedor-principal .imagen img {
+  width: 100%;
+}
+
+main .contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+main .contenedor-tarjetas div {
+  width: 25%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  transition: 300ms;
+}
+
+main .contenedor-tarjetas div:hover {
+  transform: scale(1.05);
+}
+
+main .contenedor-tarjetas div h2 {
+  width: 40px;
+  height: 40px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+main .contenedor-tarjetas div h3 {
+  padding-top: 10px;
+}
+
+main .contenedor-tarjetas div h3 span {
+  background: linear-gradient(to top, white 0%, white 50%, #92f7f2 50%, #92f7f2 100%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 30px 0px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer p {
+  color: black;
+}
+
+footer div .fab {
+  padding: 10px;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+footer div .fab:hover {
+  box-shadow: 3px 3px 5px black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
